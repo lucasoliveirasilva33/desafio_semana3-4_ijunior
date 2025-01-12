@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Desafio IJunior</title>
+</head>
+
+<body>
+  <div class="container-principal">
+    <img id='fundo' src="./images/bg-main-desktop.png" alt="">
+
+    <div class="cartao cartao-frente">
+      <img src="./images/bg-card-front.png" alt="">
+      <img class="cartao-logo" src="./images/card-logo.svg" alt="">
+      <p class="cartao-numero">0000 0000 0000 0000</p>
+      <p class="cartao-nome">Jane Aplessed</p>
+      <p class="cartao-data-exp">00/00</p>
+    </div>
+
+    <div class="cartao cartao-verso">
+      <img src="./images/bg-card-back.png" alt="">
+      <p class="cartao-cvc">000</p>
+    </div>
+
+    <div class="formulario">
+      <p class="etiqueta-nome">NOME NO CARTÃO</p>
+      <input maxlength="20" placeholder="ex.: Jane Aplessed" type="text" class="entrada-nome">
+      <p class="erro-nome">Formato errado, apenas letras e espaços!</p>
+      
+      <p class="etiqueta-numero">NÚMERO DO CARTÃO</p>
+      <input maxlength="16" placeholder="ex.: 0000 0000 0000 0000" type="text" class="entrada-numero">
+      <p class="erro-numero">!</p>
+
+      <div class="data-cvc">
+        <div>
+          <p class="etiqueta-data-exp">DATA DE EXPIRAÇÃO (MM/YY)</p>
+          <div class="entradas-data-exp">
+            <input maxlength="2" placeholder="MM" type="text" class="entrada-exp-MM">
+            <input maxlength="2" placeholder="YY" type="text" class="entrada-exp-YY">
+          </div>
+          <p class="erro-data-exp">DATA INVÁLIDA!</p>
+        </div>
+        
+        <div>
+          <p class="etiqueta-cvc">CVC</p>
+          <input maxlength="3" placeholder="ex.: 000" type="text" class="entrada-cvc">
+          <p class="erro-cvc">CVC INVÁLIDO</p>
+        </div>
+      </div>
+      
+        <p class="erro-geral">DADOS INCORRETOS</p>
+        <button class="botao botao-enviar">Confirmar</button>
+    </div>
+
+    <div class="mensagem-sucesso">
+      <img src="./images/icon-complete.svg" alt="">
+      <h1>OBRIGADO!</h1>
+      <p>Adicionamos os detalhes do seu cartão</p>
+      <button class="botao botao-continuar">Continuar</button>
+    </div>
+  </div>
+  
+  <div></div>
+  
+  pt src="./script.js"></script>
+
+</body>
+</html>
